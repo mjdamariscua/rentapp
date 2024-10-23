@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Administrator</title>
+    <meta
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+      name="viewport"
+    />
+    <link
+      rel="icon"
+      href="assets/img/kaiadmin/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!-- Fonts and icons -->
+    <script src="assets/js/plugin/webfont/webfont.min.js"></script>
+    <script>
+      WebFont.load({
+        google: { families: ["Public Sans:300,400,500,600,700"] },
+        custom: {
+          families: [
+            "Font Awesome 5 Solid",
+            "Font Awesome 5 Regular",
+            "Font Awesome 5 Brands",
+            "simple-line-icons",
+          ],
+          urls: ["assets/css/fonts.min.css"],
+        },
+        active: function () {
+          sessionStorage.fonts = true;
+        },
+      });
+    </script>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins.min.css" />
+    <link rel="stylesheet" href="assets/css/kaiadmin.css" />
+
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link rel="stylesheet" href="assets/css/demo.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar -->
+      <div class="sidebar" data-background-color="dark">
+        <div class="sidebar-logo">
+          <!-- Logo Header -->
+          <div class="logo-header" data-background-color="dark">
+            <a href="index.html" class="logo">
+              
+            </a>
+            <div class="nav-toggle">
+              <button class="btn btn-toggle toggle-sidebar">
+                <i class="gg-menu-right"></i>
+              </button>
+              <button class="btn btn-toggle sidenav-toggler">
+                <i class="gg-menu-left"></i>
+              </button>
+            </div>
+            <button class="topbar-toggler more">
+              <i class="gg-more-vertical-alt"></i>
+            </button>
+          </div>
+          <!-- End Logo Header -->
+        </div>
+        <div class="sidebar-wrapper scrollbar scrollbar-inner">
+          <div class="sidebar-content">
+            <ul class="nav nav-secondary">
+              <li class="nav-item">
+                <a
+                  href="index.html"
+             
+                >
+                  <i class="fas fa-home"></i>
+                  <p>Dashboard</p>
+                  
+                </a>
+                
+              </li>
+              <li class="nav-item">
+                <a
+                  href="advertisements.html"
+                >
+                  <i class="fas fa-home"></i>
+                  <p>Your Advertisements</p>
+                  
+                </a>
+                
+              </li>
+              <li class="nav-item">
+                <a
+                  href="requests.html"
+                >
+                  <i class="fas fa-home"></i>
+                  <p>Your Requests</p>
+                  
+                </a>
+                
+              </li>
+
+              <li class="nav-item active">
+                <a
+                  href="add-new-property.html"
+                >
+                  <i class="fas fa-home"></i>
+                  <p>Add New Property</p>
+                  
+                </a>
+                
+              </li>
+
+              <li class="nav-item">
+                <a
+                  href="../index.html"
+                >
+                  <i class="fas fa-home"></i>
+                  <p>Exit</p>
+                  
+                </a>
+                
+              </li>
+
+             
+              
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- End Sidebar -->
+
+      <div class="main-panel">
+        <div class="main-header">
+          <div class="main-header-logo">
+            <!-- Logo Header -->
+            <div class="logo-header" data-background-color="dark">
+              <a href="index.html" class="logo">
+                <img
+                  src="assets/img/kaiadmin/logo_light.svg"
+                  alt="navbar brand"
+                  class="navbar-brand"
+                  height="20"
+                />
+              </a>
+              <div class="nav-toggle">
+                <button class="btn btn-toggle toggle-sidebar">
+                  <i class="gg-menu-right"></i>
+                </button>
+                <button class="btn btn-toggle sidenav-toggler">
+                  <i class="gg-menu-left"></i>
+                </button>
+              </div>
+              <button class="topbar-toggler more">
+                <i class="gg-more-vertical-alt"></i>
+              </button>
+            </div>
+            <!-- End Logo Header -->
+          </div>
+          <!-- Navbar Header -->
+          
+          <!-- End Navbar -->
+        </div>
+
+        <div class="container">
+          <div class="page-inner">
+            <div
+              class="d-flex align-items-left align-items-md-center flex-column flex-md-row pt-2 pb-4"
+            >
+              <div>
+                <h3 class="fw-bold mb-3">Add New Property</h3>
+              </div>
+              <!-- <div class="ms-md-auto py-2 py-md-0">
+                <a href="#" class="btn btn-label-info btn-round me-2">Manage</a>
+                <a href="#" class="btn btn-primary btn-round">Add Customer</a>
+              </div> -->
+            </div>
+            
+           
+            
+            <div class="row">
+             
+              <div class="col-md-12">
+                <div class="card">
+                  <div class="card-header font-weight-bold">
+                    <h5 class="card-title">Basic Information</h5>
+                    <small>Your have to describe de property</small>
+                  </div>
+                  <div class="card-body">
+
+
+                    <div class="row pb-3">
+                      <div class="col-12 col-md-12 ">
+                        <div class="row">
+                          <div class="col-2">
+
+                            
+                            <label class="custom-checkbox">
+                              <input type="radio" name="type" selected>
+                              <span class="checkmark"></span> Entire house
+                            </label>
+                          </div>
+                          <div class="col-2">
+                            <label class="custom-checkbox">
+                              <input type="radio" name="type">
+                              <span class="checkmark"></span> Apartment
+                            </label>
+                          </div>
+                          <div class="col-2">
+                            <label class="custom-checkbox">
+                              <input type="radio" name="type">
+                              <span class="checkmark"></span> Room
+                            </label>
+                          </div>
+                          <div class="col-2">
+                            <label class="custom-checkbox">
+                              <input type="radio" name="type">
+                              <span class="checkmark"></span> Garage
+                            </label>
+                          </div>
+                          <div class="col-2">
+                            <label class="custom-checkbox">
+                              <input type="radio" name="type">
+                              <span class="checkmark"></span> Patio
+                            </label>
+                          </div>
+                          <div class="col-2">
+                            <label class="custom-checkbox">
+                              <input type="radio" name="type">
+                              <span class="checkmark"></span> Lot
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row pb-3">
+                      <div class="col-12 col-md-12 ">
+                        <div class="row">
+                          <div class="col-2">
+                            <label class="custom-checkbox">
+                              <input type="radio" name="type">
+                              <span class="checkmark"></span> Warehouse
+                            </label>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="row">
+                      <div class="col-md-12 col-12">
+
+                        <div class="mb-3">
+                          <label for="exampleFormControlInput1" class="form-label">Title</label>
+                          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+
+                        </div>
+
+                        <div class="mb-3">
+                          <label for="exampleFormControlInput1" class="form-label">Description Property</label>
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+
+                        <div class="mb-3">
+                          <label for="exampleFormControlInput1" class="form-label">Price</label>
+                          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+                        </div>
+
+
+                      </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-md-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h5 class="card-title">Where's your place located?</h5>
+                    <small>Your address is only shared with guests after they've made a reservation</small>
+                  </div>
+                  <div class="card-body">
+
+                      <div class="row">
+                        <div class="col-md-6 col-12">
+                                <iframe
+                                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63536.63871717301!2d95.32870249999999!3d5.5611019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3040377ae63dbcdf%3A0x3039d80b220cb90!2sBanda%20Aceh%2C%20Kota%20Banda%20Aceh%2C%20Aceh!5e0!3m2!1sid!2sid!4v1701054428265!5m2!1sid!2sid"
+                                  width="600"
+                                  height="450"
+                                  style="border: 0; width: 100%"
+                                  allowfullscreen=""
+                                  loading="lazy"
+                                  referrerpolicy="no-referrer-when-downgrade"
+                                ></iframe>
+                        </div>
+                        <div class="col-md-6 col-12">
+                          
+                          <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Country</label>
+                            <select class="form-select" aria-label="Default select example">
+                              <option selected>United States - US</option>
+                              
+                            </select>                          
+                          </div>
+                          <div class="mb-1">
+                            <label for="exampleFormControlTextarea1" class="form-label">Street Address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+
+                          </div>
+                          <div class="mb-1">
+                            <label for="exampleFormControlTextarea1" class="form-label">Apt, suite, unit (if applicable)</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+
+                          </div>
+                          <div class="mb-1">
+                            <label for="exampleFormControlTextarea1" class="form-label">City / town</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+
+                          </div>
+                          <div class="mb-1">
+                            <label for="exampleFormControlTextarea1" class="form-label">State / territory</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+
+                          </div>
+                          <div class="mb-1">
+                            <label for="exampleFormControlTextarea1" class="form-label">Zip code</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+
+                          </div>
+                        </div>
+                      </div>
+                      
+                    
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-md-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h5 class="card-title">Share some basics about your place</h5>
+                    <small>You'll add more details later, like bed types.</small>
+                  </div>
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="form-group">
+                          <label>Guests</label>
+                          <div class="numbers-row">
+                            <input type="text" value="1" id="adults" class="qty2 form-control" name="quantity">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="form-group">
+                          <label>Bedrooms</label>
+                          <div class="numbers-row">
+                            <input type="text" value="0" id="children" class="qty2 form-control" name="quantity">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="form-group">
+                          <label>Beds</label>
+                          <div class="numbers-row">
+                            <input type="text" value="1" id="adults" class="qty2 form-control" name="quantity">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="form-group">
+                          <label>Bathrooms</label>
+                          <div class="numbers-row">
+                            <input type="text" value="0" id="children" class="qty2 form-control" name="quantity">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h5 class="card-title">Tell guests what your place has to offer</h5>
+                    <small>You can add mode amenities after publish your listing</small>
+                  </div>
+                  <div class="card-body">
+
+
+                   
+
+                    <div class="row">
+                      <div class="col-12 col-md-6 ">
+                        <div class="row">
+                          <div class="col-4">
+                            <label class="custom-checkbox">
+                              <input type="checkbox">
+                              <span class="checkmark"></span> Wifi
+                            </label>
+                          </div>
+                          <div class="col-4">
+                            <label class="custom-checkbox">
+                              <input type="checkbox">
+                              <span class="checkmark"></span> Laundry room
+                            </label>
+                          </div>
+                          <div class="col-4">
+                            <label class="custom-checkbox">
+                              <input type="checkbox">
+                              <span class="checkmark"></span> Parking
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-12 col-md-6 ">
+                        <div class="row">
+                          <div class="col-4">
+                            <label class="custom-checkbox">
+                              <input type="checkbox">
+                              <span class="checkmark"></span> Window covering
+                            </label>
+                          </div>
+                          <div class="col-4">
+                            <label class="custom-checkbox">
+                              <input type="checkbox">
+                              <span class="checkmark"></span> Elevator in building
+                            </label>
+                          </div>
+                          <div class="col-4">
+                            <label class="custom-checkbox">
+                              <input type="checkbox">
+                              <span class="checkmark"></span> Pool
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-12 col-md-6 ">
+                        <div class="row">
+                          <div class="col-4">
+                            <label class="custom-checkbox">
+                              <input type="checkbox">
+                              <span class="checkmark"></span> Equipped Kitchen
+                            </label>
+                          </div>
+                          <div class="col-4">
+                            <label class="custom-checkbox">
+                              <input type="checkbox">
+                              <span class="checkmark"></span> Garage Attached
+                            </label>
+                          </div>
+                          <div class="col-4">
+                            <label class="custom-checkbox">
+                              <input type="checkbox">
+                              <span class="checkmark"></span> Back yard
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="row">
+                      <div class="col-12 col-md-6 ">
+                        <div class="row">
+                          <div class="col-4">
+                            <label class="custom-checkbox">
+                              <input type="checkbox">
+                              <span class="checkmark"></span> Security
+                            </label>
+                          </div>
+                          <div class="col-4">
+                            <label class="custom-checkbox">
+                              <input type="checkbox">
+                              <span class="checkmark"></span> Air Conditioning
+                            </label>
+                          </div>
+                          <div class="col-4">
+                            <label class="custom-checkbox">
+                              <input type="checkbox">
+                              <span class="checkmark"></span> Back yard
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-12 col-md-6 ">
+                        <div class="row">
+                          <div class="col-4">
+                            <label class="custom-checkbox">
+                              <input type="checkbox">
+                              <span class="checkmark"></span> Fitness Gym
+                            </label>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                    
+
+
+                    
+
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h5 class="card-title">Property Media</h5>
+                    <small>Your address is only shared with guests after they've made a reservation</small>
+                  </div>
+                  <div class="card-body">
+                    Upload de fotos
+                  </div>
+                </div>
+              </div>
+
+             
+
+
+
+            </div>
+          </div>
+        </div>
+
+        <footer class="footer">
+          
+        </footer>
+      </div>
+
+     
+    </div>
+    <!--   Core JS Files   -->
+    <script src="assets/js/core/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/core/popper.min.js"></script>
+    <script src="assets/js/core/bootstrap.min.js"></script>
+
+    <!-- jQuery Scrollbar -->
+    <script src="assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+
+    <!-- Chart JS -->
+    <script src="assets/js/plugin/chart.js/chart.min.js"></script>
+
+    <!-- jQuery Sparkline -->
+    <script src="assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
+
+    <!-- Chart Circle -->
+    <script src="assets/js/plugin/chart-circle/circles.min.js"></script>
+
+    <!-- Datatables -->
+    <script src="assets/js/plugin/datatables/datatables.min.js"></script>
+
+    <!-- Bootstrap Notify -->
+    <script src="assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+
+    <!-- jQuery Vector Maps -->
+    <script src="assets/js/plugin/jsvectormap/jsvectormap.min.js"></script>
+    <script src="assets/js/plugin/jsvectormap/world.js"></script>
+
+    <!-- Sweet Alert -->
+    <script src="assets/js/plugin/sweetalert/sweetalert.min.js"></script>
+
+    <!-- Kaiadmin JS -->
+    <script src="assets/js/kaiadmin.min.js"></script>
+
+    <!-- Kaiadmin DEMO methods, don't include it in your project! -->
+    <script src="assets/js/setting-demo.js"></script>
+    <script src="assets/js/demo.js"></script>
+    <!-- Map -->
+    <script src="https://maps.googleapis.com/maps/api/js"></script>                      
+    <script src="js/map.js"></script>
+    <script src="js/infobox.js"></script>
+    
+  </body>
+</html>
