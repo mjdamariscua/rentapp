@@ -1,644 +1,741 @@
 <!DOCTYPE html>
-<html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="AIRBNB">
-    <meta name="author" content="Ansonika">
-    <title>AirBNB</title>
 
-    <!-- Favicons-->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
-    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
-    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
-    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
+<!-- Basic Page Needs
+================================================== -->
+<title>StayPros</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <!-- GOOGLE WEB FONT -->
-    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<!-- CSS
+================================================== -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style-color-2.css" id="colors">
 
-    <!-- COMMON CSS -->
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-	<link href="css/vendors.css" rel="stylesheet">
-	
-	<!-- ALTERNATIVE COLORS CSS -->
-    <link href="index_7.html#" id="colors" rel="stylesheet">
-        
 </head>
+
 <body>
 
-    <div id="preloader">
-        <div class="sk-spinner sk-spinner-wave">
-            <div class="sk-rect1"></div>
-            <div class="sk-rect2"></div>
-            <div class="sk-rect3"></div>
-            <div class="sk-rect4"></div>
-            <div class="sk-rect5"></div>
-        </div>
-    </div>
-    <!-- End Preload -->
+<!-- Wrapper -->
+<div id="wrapper">
 
-    <div class="layer"></div>
-    <!-- Mobile menu overlay mask -->
+<!-- Header Container
+================================================== -->
+<header id="header-container">
 
-     <!-- Header================================================== -->
-    <header>
-        <div id="top_line">
-            <div class="container">
-                <div class="row">
-                    <div class="col-6"><i class="icon-phone"></i><strong>0045 555555555</strong></div>
-                    <div class="col-6">
-                        <ul id="top_links">
-                            <li><a href="login.html" >Sign in</a></li>
-                            <li><a href="#" >Sign out</a></li>
-                            <li><a href="wishlist.html" id="wishlist_link">Wishlist</a></li>
-                            <li><a href="admin.html" id="wishlist_link">Settings</a></li>
-                            <li><a href="dashboard/index.html" id="wishlist_link">Admin</a></li>
-                        </ul>
-                    </div>
-                </div><!-- End row -->
-            </div><!-- End container-->
-        </div><!-- End top line-->
-        
-        <div class="container">
-            <div class="row">
-                <div class="col-3">
-                    <div id="logo_home">
-                    	<h1><a href="index.html" title="AIrbnb travel template">AIrbnb travel template</a></h1>
-                    </div>
-                </div>
-                <nav class="col-9">
-                    <a class="cmn-toggle-switch cmn-toggle-switch__htx open_close" href="javascript:void(0);"><span>Menu mobile</span></a>
-                    <div class="main-menu d-md-none">
-                        <div id="header_menu">
-                            <img src="img/logo_sticky.png" width="160" height="34" alt="AIrbnb">
-                        </div>
-                        <a href="confirmation_hotel.html#" class="open_close" id="close_in"><i class="icon_set_1_icon-77"></i></a>
-                         <ul>
-                            <li class="submenu">
-                                <a href="index.html" class="show-submenu">Home </a>
-								<a href="login.html" class="show-submenu">Login </a>
-								<a href="register.html" class="show-submenu">Register </a>
-								<a href="wishlist.html" class="show-submenu">Wishlist </a>
-								<a href="admin.html" class="show-submenu">Settings </a>
-								<a href="dashboard/index.html" class="show-submenu">Admin </a>
-								<a href="javascript:void(0);" class="show-submenu">Logout </a>
-                                <!-- <ul>
-                                    <li><a href="index.html">Owl Carousel Slider</a></li>
-                                    <li><a href="index_25.html">KenBurns Slider</a></li>
-                                    <li><a href="index_22.html">Home items with Carousel</a></li>
-                                    <li><a href="index_23.html">Home with Search V2</a></li>
-                                   <li class="third-level"><a href="javascript:void(0);">Revolution slider <strong class="badge badge-danger">New!</strong></a>
-                                        <ul>
-                                            <li><a href="index_24.html">Default slider</a></li>
-                                            <li><a href="index_20.html">Basic slider</a></li>
-                                            <li><a href="index_14.html">Youtube Hero</a></li>
-                                            <li><a href="index_15.html">Vimeo Hero</a></li>
-                                            <li><a href="index_17.html">Full Screen <strong class="badge badge-danger">New!</strong></a></li>
-                                            <li><a href="index_21.html">Full Screen Slicey <strong class="badge badge-danger">New!</strong></a></li>
-                                            <li><a href="index_16.html">Carousel</a></li>
-                                            <li><a href="index_19.html">Mailchimp Newsletter</a></li>
-                                            <li><a href="index_18.html">Fixed Caption</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="index_12.html">Layer slider</a></li>
-                                    <li><a href="index_2.html">With Only tours</a></li>
-                                    <li><a href="index_3.html">Single image</a></li>
-                                    <li><a href="index_4.html">Header video</a></li>
-                                    <li><a href="index_7.html">With search panel</a></li>
-                                    <li><a href="index_13.html">With tabs</a></li>
-                                    <li><a href="index_5.html">With map</a></li>
-                                    <li><a href="index_6.html">With search bar</a></li>
-                                    <li><a href="index_8.html">Search bar + Video</a></li>
-                                    <li><a href="index_9.html">With Text Rotator</a></li>
-                                    <li><a href="index_10.html">With Cookie Bar (EU law)</a></li>
-                                    <li><a href="index_11.html">Popup Advertising</a></li>
-                                </ul> -->
-                            </li>
-                            
-                        </ul>
-                    </div><!-- End main-menu -->
-                    <ul id="top_tools">
-                        <li>
-                            <a href="javascript:void(0);" class="search-overlay-menu-btn"><i class="icon_search"></i></a>
-                        </li>
-                        <li>
-                            
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div><!-- container -->
-    </header><!-- End Header -->
-    
-	<section id="search_container">
-		<div id="search">
+	<!-- Header -->
+	<div id="header">
+		<div class="container">
 			
-			<div class="tab-content">
-
-				<div class="tab-pane active show" id="hotels">
-					<h3>Hello Mario!<br> Airbnb your home</h3>
-					<div class="row">
-						<div class="col-md-3">
-							<div class="form-group">
-								<label><i class="icon-calendar-7"></i> Check in</label>
-								<input class="date-pick form-control" type="text">
-							</div>
-						</div>
-						<div class="col-md-3">
-							<div class="form-group">
-								<label><i class="icon-calendar-7"></i> Check out</label>
-								<input class="date-pick form-control" type="text">
-							</div>
-						</div>
-						<div class="col-md-2 col-sm-3 col-6">
-							<div class="form-group">
-								<label>Adults</label>
-								<div class="numbers-row">
-									<input type="text" value="1" id="adults" class="qty2 form-control" name="adults_2">
-								</div>
-							</div>
-						</div>
-						<div class="col-md-2 col-sm-3 col-6">
-							<div class="form-group">
-								<label>Children</label>
-								<div class="numbers-row">
-									<input type="text" value="0" id="children" class="qty2 form-control" name="children_2">
-								</div>
-							</div>
-						</div>
-						<div class="col-md-2 col-sm-3 col-12">
-							<div class="form-group">
-								<label>Rooms</label>
-								<div class="numbers-row">
-									<input type="text" value="1" id="children" class="qty2 form-control" name="rooms">
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- End row -->
-					<div class="row">
-						<div class="col-md-12">
-							<div class="form-group">
-								<label><i class="icon-location"></i>  Where?</label>
-								<input type="text" class="form-control" id="lacation" name="location" placeholder="Location">
-							</div>
-						</div>
-						
-					</div>
-					<!-- End row -->
-					<hr>
-					<a class="btn_1 green" href="all_hotels_list.html"><i class="icon-search"></i>Search now</a>
+			<!-- Left Side Content -->
+			<div class="left-side">
+				
+				<!-- Logo -->
+				<div id="logo">
+					<a href="index.html"><img src="images/logo-2.png" alt=""></a>
 				</div>
+
+				<!-- Mobile Navigation -->
+				<div class="mmenu-trigger">
+					<button class="hamburger hamburger--collapse" type="button">
+						<span class="hamburger-box">
+							<span class="hamburger-inner"></span>
+						</span>
+					</button>
+				</div>
+
+				<!-- Main Navigation -->
+				<nav id="navigation" class="style-1">
+					<ul id="responsive">
+
+						<li><a class="current" href="index.html">Home</a>
+							
+						</li>
+
+						
+
+						<li><a href="javascript:void()">Administration</a>
+							<ul>
+								<li><a href="dashboard.html">Dashboard</a></li>
+								<li><a href="dashboard-messages.html">Messages</a></li>
+								<li><a href="dashboard-bookings.html">My Bookings</a></li>
+								<li><a href="dashboard-wallet.html">Wishlist</a></li>
+								<li><a href="dashboard-wallet.html">Wallet</a></li>
+								<li>
+									<a href="javascript:void()">Properties
+										<ul>
+											<li><a href="dashboard-my-listings.html">My Properties</a>
+												<ul>
+													<li>
+														<a href="dashboard-my-listings.html">Active</a>
+													</li>
+													<li>
+														<a href="dashboard-my-listings.html">Pending</a>
+													</li>
+													<li>
+														<a href="dashboard-my-listings.html">Inactive</a>
+													</li>
+			
+												</ul>
+											</li>
+											<li><a href="dashboard-reviews.html">Reviews</a></li>
+											<li><a href="dashboard-bookmarks.html">Bookmarks</a></li>
+											<li><a href="dashboard-add-listing.html">Declare New Property</a></li>
+										</ul>
+									</a>
+								</li>
+								<li><a href="dashboard-my-profile.html">My Profile</a></li>
+
+								
+								
+							</ul>
+						</li>
+
+						<li><a href="index.html">Logout</a>
+							
+						</li>
+						
+					</ul>
+				</nav>
+				<div class="clearfix"></div>
+				<!-- Main Navigation / End -->
 				
 			</div>
-		</div>
-	</section>
-	<!-- End hero -->
+			<!-- Left Side Content / End -->
 
-	<main>
-	<div class="container margin_60">
-    
-        <div class="main_title">
-            <h2><span>Top</span> Airbnb in Miami Beach</h2>
-            <p>Quisque at tortor a libero posuere laoreet vitae sed arcu. Curabitur consequat.</p>
-        </div>
-        
-        <div class="row">
-        
-            
-            
-            <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
-                <div class="tour_container">
-					<div class="ribbon_3"><span>Top rated</span></div>
-                    <div class="img_container">
-                        <a href="single_hotel.html">
-                        <img src="img/tour_box_12.jpg" width="800" height="533" class="img-fluid" alt="Image">
-                        <div class="short_info">
-                            <i class="icon_set_1_icon-14"></i>Eat &amp; drink<span class="price"><sup>$</sup>25</span>
-                        </div>
-                        </a>
-                    </div>
-                    <div class="tour_title">
-                        <h3><strong>Miami Beach</strong> Apartment</h3>
-                        <div class="rating">
-                            <i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star-empty "></i><small>(75)</small>
-                        </div><!-- end rating -->
-                        <div class="wishlist">
-                            <a class="tooltip_flip tooltip-effect-1" href="javascript:void(0);">+<span class="tooltip-content-flip"><span class="tooltip-back">Add to wishlist</span></span></a>
-                        </div><!-- End wish list-->
-                    </div>
-                </div><!-- End box tour -->
-            </div><!-- End col -->
 
-            <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
-                <div class="tour_container">
-					<div class="ribbon_3"><span>Top rated</span></div>
-                    <div class="img_container">
-                        <a href="single_hotel.html">
-                        <img src="img/tour_box_12.jpg" width="800" height="533" class="img-fluid" alt="Image">
-                        <div class="short_info">
-                            <i class="icon_set_1_icon-14"></i>Eat &amp; drink<span class="price"><sup>$</sup>25</span>
-                        </div>
-                        </a>
-                    </div>
-                    <div class="tour_title">
-                        <h3><strong>Miami Beach</strong> Apartment</h3>
-                        <div class="rating">
-                            <i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star-empty "></i><small>(75)</small>
-                        </div><!-- end rating -->
-                        <div class="wishlist">
-                            <a class="tooltip_flip tooltip-effect-1" href="javascript:void(0);">+<span class="tooltip-content-flip"><span class="tooltip-back">Add to wishlist</span></span></a>
-                        </div><!-- End wish list-->
-                    </div>
-                </div><!-- End box tour -->
-            </div><!-- End col -->
+			<!-- Right Side Content / End -->
+			<div class="right-side">
+				<div class="header-widget">
+					<!--index.html#sign-in-dialog-->
+					<!-- User Menu -->
+					<div class="user-menu">
+						<div class="user-name"><span><img src="images/profile.jpg" alt=""></span>Hi, Koo/Freddy!</div>
+						<ul>
+							<li><a href="dashboard.html"><i class="sl sl-icon-settings"></i> Dashboard</a></li>
+							<li><a href="dashboard-messages.html"><i class="sl sl-icon-envelope-open"></i> Messages</a></li>
+							<li><a href="dashboard-bookings.html"><i class="fa fa-calendar-check-o"></i> Bookings</a></li>
+							<!-- <li><a href="login.html"><i class="sl sl-icon-powerw"></i> Login</a></li>							 -->
+							<li><a href="#sign-in-dialog" class="popup-with-zoom-anim"><i class="sl sl-icon-login"></i> Sign In</a></li>
 
-            <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
-                <div class="tour_container">
-					<div class="ribbon_3"><span>Top rated</span></div>
-                    <div class="img_container">
-                        <a href="single_hotel.html">
-                        <img src="img/tour_box_12.jpg" width="800" height="533" class="img-fluid" alt="Image">
-                        <div class="short_info">
-                            <i class="icon_set_1_icon-14"></i>Eat &amp; drink<span class="price"><sup>$</sup>25</span>
-                        </div>
-                        </a>
-                    </div>
-                    <div class="tour_title">
-                        <h3><strong>Miami Beach</strong> Apartment</h3>
-                        <div class="rating">
-                            <i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star-empty "></i><small>(75)</small>
-                        </div><!-- end rating -->
-                        <div class="wishlist">
-                            <a class="tooltip_flip tooltip-effect-1" href="javascript:void(0);">+<span class="tooltip-content-flip"><span class="tooltip-back">Add to wishlist</span></span></a>
-                        </div><!-- End wish list-->
-                    </div>
-                </div><!-- End box tour -->
-            </div><!-- End col -->
-            
-        </div><!-- End row -->
-		
-        <p class="text-center nopadding">
-            <a href="all_hotels_list.html" class="btn_1 medium"><i class="icon-eye-7"></i>View all tours (144) </a>
-        </p>
-    </div><!-- End container -->
-    
-    <div class="white_bg">
-			<div class="container margin_60">
-				<div class="main_title">
-					<h2>Other <span>Popular</span> Apartments</h2>
-					<p>
-						Quisque at tortor a libero posuere laoreet vitae sed arcu. Curabitur consequat.
-					</p>
+							<li><a href="index.html"><i class="sl sl-icon-power"></i> Logout</a></li>
+						</ul>
+					</div>
+
+					<!-- <a href="login.html" class="sign-in"><i class="sl sl-icon-login"></i> Sign In</a> -->
+					<a href="dashboard-add-listing.html" class="button border with-icon">Property <i class="sl sl-icon-plus"></i></a>
 				</div>
-				<div class="row add_bottom_45">
-					<div class="col-lg-4 other_tours">
-						<ul>
-							<li><a href="index_7.html#"><i class="icon_set_1_icon-3"></i>Apartment 1<span class="other_tours_price">$10</span></a>
-							</li>
-							<li><a href="index_7.html#"><i class="icon_set_1_icon-3"></i>Apartment 1<span class="other_tours_price">$10</span></a>
-							</li>
-                            <li><a href="index_7.html#"><i class="icon_set_1_icon-3"></i>Apartment 1<span class="other_tours_price">$10</span></a>
-							</li>
-                            <li><a href="index_7.html#"><i class="icon_set_1_icon-3"></i>Apartment 1<span class="other_tours_price">$10</span></a>
-							</li>
-						</ul>
+			</div>
+			<!-- Right Side Content / End -->
+
+			<!-- Sign In Popup -->
+			<div id="sign-in-dialog" class="zoom-anim-dialog mfp-hide">
+
+				<div class="small-dialog-header">
+					<h3>Sign In</h3>
+				</div>
+
+				<!--Tabs -->
+				<div class="sign-in-form style-1">
+
+					
+					<div class="tabs-container ">
+
+						<!-- Login -->
+
+						
+						<div class="tab-content">
+
+							<a href="login.html#" class=" border social_bt facebook">Login with Facebook</a>
+							<a href="login.html#" class=" border social_bt google">Login with Google</a>
+							<div class="divider"><span>Or</span></div>
+							<form method="post" class="login" >
+
+								<p class="form-row form-row-wide">
+									<label for="username">Email:
+										<i class="im im-icon-Male"></i>
+										<input type="text" class="input-text" name="username" id="username" value="" />
+									</label>
+								</p>
+
+								<p class="form-row form-row-wide">
+									<label for="password">Password:
+										<i class="im im-icon-Lock-2"></i>
+										<input class="input-text" type="password" name="password" id="password"/>
+									</label>
+									<span class="lost_password text-right">
+										<a href="index.html#" >Lost Your Password?</a>
+									</span>
+                                    
+								</p>
+
+                                
+
+
+
+								<div class="form-row text-left">
+                                    <!-- <div class="checkboxes margin-top-10">
+										<input id="remember-me" type="checkbox" name="check">
+										<label for="remember-me">Remember Me</label>
+									</div> -->
+                                    <div class="text-left margin-top-10">
+									    <input type="button" class="button border " name="login" value="Login" />
+                                    </div>
+                                    
+								</div>
+
+                                <div class="divider"></div>
+
+                                <p class="form-row form-row-wide text-right">
+									
+                                    <span class="  text-right"> · 
+										New? <a href="#sign-up-dialog" >Create an account</a>
+									</span>
+								</p>
+								
+							</form>
+						</div>
+
+						
+
 					</div>
-                    <div class="col-lg-4 other_tours">
-						<ul>
-							<li><a href="index_7.html#"><i class="icon_set_1_icon-3"></i>Apartment 1<span class="other_tours_price">$10</span></a>
-							</li>
-							<li><a href="index_7.html#"><i class="icon_set_1_icon-3"></i>Apartment 1<span class="other_tours_price">$10</span></a>
-							</li>
-                            <li><a href="index_7.html#"><i class="icon_set_1_icon-3"></i>Apartment 1<span class="other_tours_price">$10</span></a>
-							</li>
-                            <li><a href="index_7.html#"><i class="icon_set_1_icon-3"></i>Apartment 1<span class="other_tours_price">$10</span></a>
-							</li>
-						</ul>
+				</div>
+			</div>
+			<!-- Sign In Popup / End -->
+
+			<!-- Sign Up Popup -->
+			<div id="sign-up-dialog" class="zoom-anim-dialog mfp-hide">
+
+				<div class="small-dialog-header">
+					<h3>Sign Up</h3>
+				</div>
+
+				<!--Tabs -->
+				<div class="sign-in-form style-1">
+
+					
+					<div class="tabs-container alt">
+
+
+                        <!-- Login -->
+						<div class="tab-content2"  >
+							
+                 
+                                <a href="login.html#" class=" border social_bt facebook">Create with Facebook</a>
+							    <a href="login.html#" class=" border social_bt google">Create with Google</a>
+                                <div class="divider"><span>Or</span></div>
+                        </div>
+
+
+						<!-- Login -->
+						<div class="tab-content"  >
+							<form method="post" class="register" >
+								
+                                <p class="form-row form-row-wide">
+                                    <label for="username2">Full Name:
+                                        <i class="im im-icon-Male"></i>
+                                        <input type="text" class="input-text" name="username" id="username2" value="" />
+                                    </label>
+                                </p>
+                               
+                                    
+                                <p class="form-row form-row-wide">
+                                    <label for="email2">Email Address:
+                                        <i class="im im-icon-Mail"></i>
+                                        <input type="text" class="input-text" name="email" id="email2" value="" />
+                                    </label>
+                                </p>
+
+                                <p class="form-row form-row-wide">
+                                    <label for="email2">Phone:
+                                        <i class="im im-icon-Phone"></i>
+                                        <input type="text" class="input-text" name="email" id="email2" value="" />
+                                    </label>
+                                </p>
+    
+                                <p class="form-row form-row-wide">
+                                    <label for="password1">Password:
+                                        <i class="im im-icon-Lock-2"></i>
+                                        <input class="input-text" type="password" name="password1" id="password1"/>
+                                    </label>
+                                </p>
+    
+                                <p class="form-row form-row-wide">
+                                    <label for="password2">Repeat Password:
+                                        <i class="im im-icon-Lock-2"></i>
+                                        <input class="input-text" type="password" name="password2" id="password2"/>
+                                    </label>
+                                </p>
+
+                                <div class="checkboxes margin-top-10">
+                                    <input id="remember-me" type="checkbox" name="check">
+                                    <label for="remember-me"> Accept terms and conditions</label>
+                                </div>
+    
+                                <input type="button" class="button border fw margin-top-10" name="register" value="Register" />
+        				</form>
+						</div>
+
+						
+
 					</div>
-                    <div class="col-lg-4 other_tours">
-						<ul>
-							<li><a href="index_7.html#"><i class="icon_set_1_icon-3"></i>Apartment 1<span class="other_tours_price">$10</span></a>
-							</li>
-							<li><a href="index_7.html#"><i class="icon_set_1_icon-3"></i>Apartment 1<span class="other_tours_price">$10</span></a>
-							</li>
-                            <li><a href="index_7.html#"><i class="icon_set_1_icon-3"></i>Apartment 1<span class="other_tours_price">$10</span></a>
-							</li>
-                            <li><a href="index_7.html#"><i class="icon_set_1_icon-3"></i>Apartment 1<span class="other_tours_price">$10</span></a>
-							</li>
-						</ul>
+				</div>
+			</div>
+			<!-- Sign In Popup / End -->
+
+		</div>
+	</div>
+	<!-- Header / End -->
+
+</header>
+<div class="clearfix"></div>
+<!-- Header Container / End -->
+
+
+<!-- Banner
+================================================== -->
+<div class="main-search-container" data-background-image="images/main-search-background-01.jpg">
+	<div class="main-search-inner">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2>Hello Koo/Freddy!</h2>
+					<h4>Let's StayPros your home</h4>
+
+					<div class="main-search-input">
+
+						<div class="main-search-input-item location">
+							<div id="autocomplete-container">
+								<input id="autocomplete-input" type="text" placeholder="Location">
+							</div>
+							<!-- <a id="geoLocation" ></a> -->
+						</div>
+
+						<div class="main-search-input-item search-input-icon">
+							<input type="text" placeholder="Check-In - Check-Out" id="booking-date-search" >
+						</div>
+
+						
+
+						<div class="main-search-input-item">
+							<select data-placeholder="All type properties" class="chosen-select" >
+								<option>All type properties</option>	
+								<option>Entire House</option>
+								<option>Apartment</option>
+								<option>Room</option>
+								<option>Garage</option>
+								<option>Patio</option>
+								<option>Lot</option>
+								<option>Warehouse</option>
+							</select>
+						</div>
+
+						<button class="button" onclick="window.location.href='listings-half-screen-map-grid.html';">Find</button>
+
+					</div>
+				</div>
+			</div>
+
+			<!-- Features Categories -->
+			<div class="row">
+				<div class="col-md-12">
+					<h5 class="highlighted-categories-headline">Or browse:</h5>
+					  
+					<div class="highlighted-categories">
+						<!-- Box -->
+						<a href="listings-half-screen-map-grid.html" class="highlighted-category">
+					    	<i class="im im-icon-Location"></i>
+					    	<h4>Nearby in your current location</h4>
+						</a>	
+
+							
 					</div>
 					
 				</div>
-				<!-- End row -->
-
-				<div class="banner colored">
-					<h4>Discover our Top tours <span>from $34</span></h4>
-					<p>
-						Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in.
-					</p>
-					<a href="single_hotel.html" class="btn_1 white">Read more</a>
-				</div>
-				
-				<!-- <div class="row">
-					<div class="col-lg-3 col-md-6 text-center">
-						<p>
-							<a href="index_7.html#"><img src="img/bus.jpg" alt="Pic" class="img-fluid rounded"></a>
-						</p>
-						<h4><span>Sightseen tour</span> booking</h4>
-						<p>Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in.</p>
-					</div>
-					<div class="col-lg-3 col-md-6 text-center">
-						<p>
-							<a href="index_7.html#"><img src="img/transfer.jpg" alt="Pic" class="img-fluid rounded"></a>
-						</p>
-						<h4><span>Transfer</span> booking</h4>
-						<p>Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in.</p>
-					</div>
-					<div class="col-lg-3 col-md-6 text-center">
-						<p>
-							<a href="index_7.html#"><img src="img/guide.jpg" alt="Pic" class="img-fluid rounded"></a>
-						</p>
-						<h4><span>Tour guide</span> booking</h4>
-						<p>Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in.</p>
-					</div>
-					<div class="col-lg-3 col-md-6 text-center">
-						<p>
-							<a href="index_7.html#"><img src="img/hotel.jpg" alt="Pic" class="img-fluid rounded"></a>
-						</p>
-						<h4><span>Hotel</span> booking</h4>
-						<p>Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in.</p>
-					</div>
-				</div> -->
-				<!-- End row -->
-				
 			</div>
-			<!-- End container -->
+			<!-- Featured Categories - End -->
+
+
 		</div>
-		<!-- End white_bg -->
 
-		<section class="promo_full">
-			<div class="promo_full_wp magnific">
-				<div>
-					<h3>BELONG ANYWHERE</h3>
-					<p>
-						Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus explicari qui ex.
-					</p>
-					<a href="https://www.youtube.com/watch?v=Zz5cu72Gv5Y" class="video"><i class="icon-play-circled2-1"></i></a>
-				</div>
-			</div>
-		</section>
-		<!-- End section -->
-
-		<div class="container margin_60">
-
-			<div class="main_title">
-				<h2>Some <span>good</span> reasons</h2>
-				<p>
-					Quisque at tortor a libero posuere laoreet vitae sed arcu. Curabitur consequat.
-				</p>
-			</div>
-
-			<div class="row">
-
-				<div class="col-lg-4 wow zoomIn" data-wow-delay="0.2s">
-					<div class="feature_home">
-						<i class="icon_set_1_icon-41"></i>
-						<h3><span>+120</span> locations</h3>
-						<p>
-							Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset.
-						</p>
-						<a href="about.html" class="btn_1 outline">Read more</a>
-					</div>
-				</div>
-
-				<div class="col-lg-4 wow zoomIn" data-wow-delay="0.4s">
-					<div class="feature_home">
-						<i class="icon_set_1_icon-30"></i>
-						<h3><span>+1000</span> Customers</h3>
-						<p>
-							Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset.
-						</p>
-						<a href="about.html" class="btn_1 outline">Read more</a>
-					</div>
-				</div>
-
-				<div class="col-lg-4 wow zoomIn" data-wow-delay="0.6s">
-					<div class="feature_home">
-						<i class="icon_set_1_icon-57"></i>
-						<h3><span>H24 </span> Support</h3>
-						<p>
-							Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset.
-						</p>
-						<a href="about.html" class="btn_1 outline">Read more</a>
-					</div>
-				</div>
-
-			</div>
-			<!--End row -->
-
-			<hr>
-
-			<div class="row">
-				<div class="col-md-6">
-					<img src="img/laptop.png" alt="Laptop" class="img-fluid laptop">
-				</div>
-				<div class="col-md-6">
-					<h3><span>Get started</span> with AirBNB</h3>
-					<p>
-						Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset.
-					</p>
-					<ul class="list_order">
-						<li><span>1</span>Select your preferred apartment</li>
-						<li><span>2</span>Purchase tickets and options</li>
-						<li><span>3</span>Pick them directly from your office</li>
-					</ul>
-					<a href="#" class="btn_1">Start now</a>
-				</div>
-			</div>
-			<!-- End row -->
-        
-    	</div>
-		<!-- End container -->
-    </main>
-	<!-- End main -->
-	
-	<footer class="revealed">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h3>Need help?</h3>
-                    <a href="tel://004542344599" id="phone">+305 355 35 55</a>
-                    <a href="mailto:help@AirBNB.com" id="email_footer">help@AirBNB.com</a>
-                </div>
-                <div class="col-md-4">
-                    <h3>About</h3>
-                    <ul>
-                        <li><a href="about.html">About us</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
-                        <li><a href="login.html">Login</a></li>
-                        <li><a href="register.html">Register</a></li>
-                         <li><a href="contactus.html">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h3>Discover</h3>
-                    <ul>
-                        <li><a href="all_hotels_map_listing.html">Apartments</a></li>
-                        <li><a href="wishlist.html">Wishlist</a></li>
-                    </ul>
-                </div>
-                <!-- <div class="col-md-2">
-                    <h3>Settings</h3>
-                    <div class="styled-select">
-                        <select name="lang" id="lang">
-                            <option value="English" selected>English</option>
-                            <option value="French">French</option>
-                            <option value="Spanish">Spanish</option>
-                            <option value="Russian">Russian</option>
-                        </select>
-                    </div>
-                    <div class="styled-select">
-                        <select name="currency" id="currency">
-                            <option value="USD" selected>USD</option>
-                            <option value="EUR">EUR</option>
-                            <option value="GBP">GBP</option>
-                            <option value="RUB">RUB</option>
-                        </select>
-                    </div>
-                </div> -->
-            </div><!-- End row -->
-            <!-- <div class="row">
-                <div class="col-md-12">
-                    <div id="social_footer">
-                        <ul>
-                            <li><a href="index_7.html#0"><i class="bi bi-instagram"></i></a></li>
-                            <li><a href="index_7.html#0"><i class="bi bi-whatsapp"></i></a></li>
-                            <li><a href="index_7.html#0"><i class="bi bi-facebook"></i></a></li>
-                            <li><a href="index_7.html#0"><i class="bi bi-twitter-x"></i></a></li>
-                            <li><a href="index_7.html#0"><i class="bi bi-youtube"></i></a></li>
-                        </ul>
-                        <p>© AirBNB 2024</p>
-                    </div>
-                </div>
-            </div>End row -->
-        </div><!-- End container -->
-    </footer><!-- End footer -->
-
-	<div id="toTop"></div><!-- Back to top button -->
-	
-	<!-- Search Menu -->
-	<div class="search-overlay-menu">
-		<span class="search-overlay-close"><i class="icon_set_1_icon-77"></i></span>
-		<form role="search" id="searchform" method="get">
-			<input value="" name="q" type="text" placeholder="Search..." />
-			<button type="submit"><i class="icon_set_1_icon-78"></i>
-			</button>
-		</form>
-	</div><!-- End Search Menu -->
-	
-	<!-- Sign In Popup -->
-	<div id="sign-in-dialog" class="zoom-anim-dialog mfp-hide">
-		<div class="small-dialog-header">
-			<h3>Sign In</h3>
-		</div>
-		<form>
-			<div class="sign-in-wrapper">
-				<a href="index_7.html#0" class="social_bt facebook">Login with Facebook</a>
-				<a href="index_7.html#0" class="social_bt google">Login with Google</a>
-				<div class="divider"><span>Or</span></div>
-				<div class="form-group">
-					<label>Email</label>
-					<input type="email" class="form-control" name="email" id="email">
-					<i class="icon_mail_alt"></i>
-				</div>
-				<div class="form-group">
-					<label>Password</label>
-					<input type="password" class="form-control" name="password" id="password" value="">
-					<i class="icon_lock_alt"></i>
-				</div>
-				<div class="clearfix add_bottom_15">
-					<div class="checkboxes float-start">
-						<label class="container_check">Remember me
-                          <input type="checkbox">
-                          <span class="checkmark"></span>
-                        </label>
-					</div>
-					<div class="float-end"><a id="forgot" href="javascript:void(0);">Forgot Password?</a></div>
-				</div>
-				<div class="text-center"><input type="submit" value="Log In" class="btn_login"></div>
-				<div class="text-center">
-					Don’t have an account? <a href="javascript:void(0);">Sign up</a>
-				</div>
-				<div id="forgot_pw">
-					<div class="form-group">
-						<label>Please confirm login email below</label>
-						<input type="email" class="form-control" name="email_forgot" id="email_forgot">
-						<i class="icon_mail_alt"></i>
-					</div>
-					<p>You will receive an email containing a link allowing you to reset your password to a new preferred one.</p>
-					<div class="text-center"><input type="submit" value="Reset Password" class="btn_1"></div>
-				</div>
-			</div>
-		</form>
-		<!--form -->
 	</div>
-	<!-- /Sign In Popup -->
+</div>
 
-	<!-- Common scripts -->
-	<script src="js/jquery-3.7.1.min.js"></script>
-	<script src="js/common_scripts_min.js"></script>
-	<script src="js/functions.js"></script>
 
-    <!-- Specific scripts -->
-    <script>
-    $(function() {
-      $('input.date-pick').daterangepicker({
-          autoUpdateInput: true,
-          singleDatePicker: true,
-          autoApply: true,
-          minDate:new Date(),
-          showCustomRangeLabel: false,
-          locale: {
-            format: 'MM-DD-YYYY'
-          }
-          }, function(start, end, label) {
-          console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('DD-MM-YYYY') + ' (predefined range: ' + label + ')');
-        });
-    });
-    </script>
-	<script>
-		$('input.time-pick').timepicker({
-			minuteStep: 15,
-			showInpunts: false
-		})
-	</script>
+
+
+
+
+
+
+<!-- Fullwidth Section -->
+<section class="fullwidth margin-top-65 padding-top-75 padding-bottom-70" data-background-color="#f8f8f8">
+
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-12">
+				<h3 class="headline centered margin-bottom-45">
+					Find interesting places
+				</h3>
+			</div>
+
+			<div class="col-md-12">
+				<div class="simple-slick-carousel dots-nav">
+
+				<!-- Listing Item -->
+				<div class="carousel-item">
+					<a target="_blank" href="https://www.walmart.com/" class="listing-item-container">
+						<div class="listing-item">
+							<img src="images/listing-item-01.jpg" alt="">
+
+							<div class="listing-badge now-open">Now Open</div>
+							
+							<div class="listing-item-content">
+								<h3>Tom's Restaurant <i class="verified-icon"></i></h3>
+								<span>964 School Street, New York</span>
+								
+							</div>
+						</div>
+						
+					</a>
+				</div>
+				<!-- Listing Item / End -->
+
+				<!-- Listing Item -->
+				<div class="carousel-item">
+					<a target="_blank" href="https://www.walmart.com/" class="listing-item-container">
+						<div class="listing-item">
+							<img src="images/listing-item-02.jpg" alt="">
+							
+							<div class="listing-item-content">
+								<h3>Sticky Band</h3>
+								<span>Bishop Avenue, New York</span>
+								
+							</div>
+						</div>
+						
+					</a>
+				</div>
+				<!-- Listing Item / End -->		
+
+				<!-- Listing Item -->
+				<div class="carousel-item">
+					<a target="_blank" href="https://www.walmart.com/" class="listing-item-container">
+						<div class="listing-item">
+							<img src="images/listing-item-03.jpg" alt="">
+							
+							<div class="listing-item-content">
+								<h3>Hotel Govendor</h3>
+								<span>778 Country Street, New York</span>
+								
+							</div>
+						</div>
+						
+					</a>
+				</div>
+				<!-- Listing Item / End -->
+
+				<!-- Listing Item -->
+				<div class="carousel-item">
+					<a target="_blank" href="https://www.walmart.com/" class="listing-item-container">
+						<div class="listing-item">
+							<img src="images/listing-item-04.jpg" alt="">
+
+							<div class="listing-badge now-open">Now Open</div>
+
+							<div class="listing-item-content">
+								<h3>Burger House <i class="verified-icon"></i></h3>
+								<span>2726 Shinn Street, New York</span>
+								
+							</div>
+							<span class="like-icon"></span>
+						</div>
+						
+					</a>
+				</div>
+				<!-- Listing Item / End -->
+
+				<!-- Listing Item -->
+				<div class="carousel-item">
+					<a target="_blank" href="https://www.walmart.com/" class="listing-item-container">
+						<div class="listing-item">
+							<img src="images/listing-item-05.jpg" alt="">
+							<div class="listing-item-content">
+								<h3>Airport</h3>
+								<span>1512 Duncan Avenue, New York</span>
+								
+							</div>
+							<span class="like-icon"></span>
+						</div>
+						
+					</a>
+				</div>
+				<!-- Listing Item / End -->
+
+				<!-- Listing Item -->
+				<div class="carousel-item">
+					<a target="_blank" href="https://www.walmart.com/" class="listing-item-container">
+						<div class="listing-item">
+							<img src="images/listing-item-06.jpg" alt="">
+
+
+							<div class="listing-item-content">
+								<h3>Think Coffee</h3>
+								<span>215 Terry Lane, New York</span>
+								
+							</div>
+							<span class="like-icon"></span>
+						</div>
+						
+					</a>
+				</div>
+				<!-- Listing Item / End -->
+				</div>
+				
+			</div>
+
+		</div>
+	</div>
+
+</section>
+<!-- Fullwidth Section / End -->
+
+<!-- Info Section -->
+<div class="container">
+
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2">
+			<h2 class="headline centered margin-top-80">
+				StayPros the property of your dreams!
+				<span class="margin-top-25">Explore some of the best tips from around the world from our partners and friends.  Discover some of the most popular listings in Sydney.</span>
+			</h2>
+		</div>
+	</div>
+
+	<div class="row icons-container">
+		<!-- Stage -->
+		<div class="col-md-4">
+			<div class="icon-box-2 with-line">
+				<i class="im im-icon-Map2"></i>
+				<h3>Find Interesting Places</h3>
+				<p>Proin dapibus nisl ornare diam varius tempus. Aenean a quam luctus, finibus tellus ut, convallis eros sollicitudin turpis.</p>
+			</div>
+		</div>
+
+		<!-- Stage -->
+		<div class="col-md-4">
+			<div class="icon-box-2 with-line">
+				<i class="im im-icon-Mail-withAtSign"></i>
+				<h3>Contact a Few Owners</h3>
+				<p>Maecenas pulvinar, risus in facilisis dignissim, quam nisi hendrerit nulla, id vestibulum metus nullam viverra porta purus.</p>
+			</div>
+		</div>
+
+		<!-- Stage -->
+		<div class="col-md-4">
+			<div class="icon-box-2">
+				<i class="im im-icon-Checked-User"></i>
+				<h3>Make a Reservation</h3>
+				<p>Faucibus ante, in porttitor tellus blandit et. Phasellus tincidunt metus lectus sollicitudin feugiat pharetra consectetur.</p>
+			</div>
+		</div>
+	</div>
+
+</div>
+<!-- Info Section / End -->
+
+
+
+
+
+<!-- Footer
+================================================== -->
+<div id="footer" class="sticky-footer">
+	<!-- Main -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-5 col-sm-6">
+				<img class="footer-logo" src="images/logo-2.png
+" alt="">
+				<br><br>
+				<p>Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero, a feugiat eros. Nunc ut lacinia tortor morbi ultricies laoreet ullamcorper phasellus semper.</p>
+			</div>
+
+			<div class="col-md-4 col-sm-6 ">
+				<h4>Helpful Links</h4>
+				<ul class="footer-links">
+					<li><a href="login.html">Login</a></li>
+					<li><a href="register.html">Sign Up</a></li>
+					<li><a href="dashboard.html">Administrator</a></li>
+					<li><a href="javascript:void()">Privacy Policy</a></li>
+				</ul>
+
+				<ul class="footer-links">
+					<li><a href="javascript:void()">FAQ</a></li>
+					<li><a href="javascript:void()">Contact Us</a></li>
+					<li><a href="javascript:void()">Terms and conditions</a></li>
+				</ul>
+				<div class="clearfix"></div>
+			</div>		
+
+			<div class="col-md-3  col-sm-12">
+				<h4>Contact Us</h4>
+				<div class="text-widget">
+					<span>12345 Miami, Florida</span> <br>
+					Phone: <span>(123) 123-456 </span><br>
+					E-Mail:<span> <a href="javascript:void()">contact@useinvestment.com</a> </span><br>
+				</div>
+
+				<ul class="social-icons margin-top-20">
+					<li><a class="facebook" href="javascript:void()"><i class="icon-facebook"></i></a></li>
+					<li><a class="twitter" href="javascript:void()"><i class="icon-twitter"></i></a></li>
+					<li><a class="gplus" href="javascript:void()"><i class="icon-gplus"></i></a></li>
+					<li><a class="vimeo" href="javascript:void()"><i class="icon-vimeo"></i></a></li>
+				</ul>
+
+			</div>
+
+		</div>
+		
+		<!-- Copyright -->
+		<div class="row">
+			<div class="col-md-12">
+				<div class="copyrights">© 2024 US Invested. All Rights Reserved.</div>
+			</div>
+		</div>
+
+	</div>
+
+</div>
+<!-- Footer / End -->
+
+
+<!-- Back To Top Button -->
+<div id="backtotop"><a href="javascript:void()"></a></div>
+
+
+</div>
+<!-- Wrapper / End -->
+
+
+<!-- Scripts
+================================================== -->
+<script type="text/javascript" src="scripts/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="scripts/jquery-migrate-3.3.2.min.js"></script>
+<script type="text/javascript" src="scripts/mmenu.min.js"></script>
+<script type="text/javascript" src="scripts/chosen.min.js"></script>
+<script type="text/javascript" src="scripts/slick.min.js"></script>
+<script type="text/javascript" src="scripts/rangeslider.min.js"></script>
+<script type="text/javascript" src="scripts/magnific-popup.min.js"></script>
+<script type="text/javascript" src="scripts/waypoints.min.js"></script>
+<script type="text/javascript" src="scripts/counterup.min.js"></script>
+<script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+<script type="text/javascript" src="scripts/tooltips.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+<!-- Date Range Picker - docs: http://www.daterangepicker.com/ -->
+<script src="scripts/moment.min.js"></script>
+<script src="scripts/daterangepicker.js"></script>
+
+<!-- Leaflet // Docs: https://leafletjs.com/ -->
+<script src="scripts/leaflet.min.js"></script>
+
+
+<!-- Leaflet Geocoder + Search Autocomplete // Docs: https://github.com/perliedman/leaflet-control-geocoder -->
+<script src="scripts/leaflet-autocomplete.js"></script>
+<script src="scripts/leaflet-control-geocoder.js"></script>
+
+<!-- Style Switcher
+================================================== -->
+<script src="scripts/switcher.js"></script>
+
+<div id="style-switcher">
+	<h2>Color Switcher <a href="javascript:void()"><i class="sl sl-icon-settings"></i></a></h2>
 	
-	<script src="js/jquery.ddslick.js"></script>
-	<script>
-		$("select.ddslick").each(function() {
-			$(this).ddslick({
-				showSelectedHTML: true
-			});
-		});
-	</script>	
-	
-  <!-- SWITCHER  -->
-    <script src="js/switcher.js"></script>
-    <div id="style-switcher">
-        <h2>Color Switcher <a href="index_7.html#"><i class="icon_set_1_icon-65"></i></a></h2>
-        <div>
-            <ul class="colors" id="color1">
-                <li><a href="index_7.html#" class="default" title="Defaul"></a></li>
-                <li><a href="index_7.html#" class="aqua" title="Aqua"></a></li>
-                <li><a href="index_7.html#" class="green_switcher" title="Green"></a></li>
-                <li><a href="index_7.html#" class="orange" title="Orange"></a></li>
-                <li><a href="index_7.html#" class="blue" title="Blue"></a></li>
-            </ul>
-        </div>
-    </div>
+	<div>
+		<ul class="colors" id="color1">
+			<li><a href="javascript:void()" class="main" title="Main"></a></li>
+			<li><a href="javascript:void()" class="blue" title="Blue"></a></li>
+			<li><a href="javascript:void()" class="green" title="Green"></a></li>
+			<li><a href="javascript:void()" class="orange" title="Orange"></a></li>
+			<li><a href="javascript:void()" class="navy" title="Navy"></a></li>
+			<li><a href="javascript:void()" class="yellow" title="Yellow"></a></li>
+			<li><a href="javascript:void()" class="peach" title="Peach"></a></li>
+			<li><a href="javascript:void()" class="beige" title="Beige"></a></li>
+			<li><a href="javascript:void()" class="purple" title="Purple"></a></li>
+			<li><a href="javascript:void()" class="celadon" title="Celadon"></a></li>
+			<li><a href="javascript:void()" class="red" title="Red"></a></li>
+			<li><a href="javascript:void()" class="brown" title="Brown"></a></li>
+			<li><a href="javascript:void()" class="cherry" title="Cherry"></a></li>
+			<li><a href="javascript:void()" class="cyan" title="Cyan"></a></li>
+			<li><a href="javascript:void()" class="gray" title="Gray"></a></li>
+			<li><a href="javascript:void()" class="olive" title="Olive"></a></li>
+		</ul>
+	</div>
+		
+</div>
+<!-- Style Switcher / End -->
+
+
+
+
 </body>
+
+
+
+<script>
+$(function() {
+
+    var start = moment().subtract(0, 'days');
+    var end = moment().add(2, 'days');
+
+    function cb(start, end) {
+        $('#booking-date-search').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+    }
+    cb(start, end);
+    $('#booking-date-search').daterangepicker({
+    	"opens": "right",
+	    "autoUpdateInput": true,
+	    "alwaysShowCalendars": true,
+        startDate: start,
+        endDate: end
+    }, cb);
+
+    cb(start, end);
+
+});
+
+// Calendar animation and visual settings
+$('#booking-date-search').on('show.daterangepicker', function(ev, picker) {
+	$('.daterangepicker').addClass('calendar-visible calendar-animated bordered-style');
+	$('.daterangepicker').removeClass('calendar-hidden');
+});
+$('#booking-date-search').on('hide.daterangepicker', function(ev, picker) {
+	$('.daterangepicker').removeClass('calendar-visible');
+	$('.daterangepicker').addClass('calendar-hidden');
+});
+
+$(window).on('load', function() {
+    $('#booking-date-search').val('');
+});
+
+$(document).ready(function() {
+  if ("geolocation" in navigator) {
+    navigator.geolocation.getCurrentPosition(function(position) {
+      var lat = position.coords.latitude;
+      var lon = position.coords.longitude;
+      
+      console.log("Latitud: " + lat + ", Longitud: " + lon);
+      
+      // Puedes hacer algo con estos datos, por ejemplo, mostrarlos en un mapa
+    }, function(error) {
+      console.error("Error al obtener la ubicación:", error);
+    });
+  } else {
+    console.log("El navegador no soporta geolocalización");
+  }
+});
+</script>
+
 </html>
